@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductWebViewController">
+            <connections>
+                <outlet property="productView" destination="iN0-l3-epB" id="uy9-yF-ZyZ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="hta-fy-qUB"/>
+                <outlet property="webView" destination="LG1-xd-T25" id="cRO-0F-H0S"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LG1-xd-T25">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="LG1-xd-T25" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NIT-hZ-f24"/>
+                <constraint firstAttribute="bottom" secondItem="LG1-xd-T25" secondAttribute="bottom" id="ZNr-Zr-AxU"/>
+                <constraint firstItem="LG1-xd-T25" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gxY-75-7Y5"/>
+                <constraint firstAttribute="trailing" secondItem="LG1-xd-T25" secondAttribute="trailing" id="zed-wG-JAG"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+</document>

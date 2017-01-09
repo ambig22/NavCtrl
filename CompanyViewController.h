@@ -7,13 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Company.h"
+#import "Product.h"
+#import "GlobalConstants.h"
 
-@class ProductViewController;
+@interface CompanyViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-@interface CompanyViewController : UITableViewController
+@property (retain, nonatomic) IBOutlet UIView *companyView;
 
-@property (nonatomic, retain) NSArray *companyList;
+@property (retain, nonatomic) IBOutlet UIImageView *logoImageView;
+@property (retain, nonatomic) IBOutlet UILabel *companyNameLabel;
+@property (retain, nonatomic) IBOutlet UITableView *productTableView;
 
-@property (nonatomic, retain) IBOutlet  ProductViewController * productViewController;
+// Stores the active company that was passed from BrowseViewController
+@property (retain, nonatomic) Company *company;
+
+// Web View for product links
+@property (retain, nonatomic) UIWebView *webView;
 
 @end

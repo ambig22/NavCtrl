@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C0AADBD1E203E2C00353199 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0AADBC1E203E2C00353199 /* Product.m */; };
+		2C0AADC01E23EF6600353199 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 2C0AADBF1E23EF6600353199 /* Notes */; };
+		2C0AADC41E24086500353199 /* ProductWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0AADC31E24086500353199 /* ProductWebViewController.m */; };
+		2C0AADC61E24088900353199 /* ProductWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C0AADC51E24088900353199 /* ProductWebViewController.xib */; };
+		2C1454F71E200F1900362BF3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1454F61E200F1900362BF3 /* Launch Screen.storyboard */; };
+		2C1454FA1E2011B200362BF3 /* GlobalConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1454F91E2011B200362BF3 /* GlobalConstants.m */; };
+		2C1454FD1E201CDA00362BF3 /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1454FC1E201CDA00362BF3 /* Company.m */; };
+		2C1454FF1E20258600362BF3 /* CompanyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C1454FE1E20258600362BF3 /* CompanyViewController.xib */; };
 		48A656B518163BF200746D36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A656B418163BF200746D36 /* Foundation.framework */; };
 		48A656B718163BF200746D36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A656B618163BF200746D36 /* CoreGraphics.framework */; };
 		48A656B918163BF200746D36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A656B818163BF200746D36 /* UIKit.framework */; };
@@ -19,9 +27,9 @@
 		48A656D018163BF200746D36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A656B818163BF200746D36 /* UIKit.framework */; };
 		48A656D818163BF200746D36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48A656D618163BF200746D36 /* InfoPlist.strings */; };
 		48A656DA18163BF200746D36 /* NavCtrlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A656D918163BF200746D36 /* NavCtrlTests.m */; };
-		48A656E618163C1B00746D36 /* CompanyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A656E418163C1B00746D36 /* CompanyViewController.m */; };
-		48A656E718163C1B00746D36 /* CompanyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A656E518163C1B00746D36 /* CompanyViewController.xib */; };
-		48A656EB18163F8700746D36 /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A656E918163F8700746D36 /* ProductViewController.m */; };
+		48A656E618163C1B00746D36 /* BrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A656E418163C1B00746D36 /* BrowseViewController.m */; };
+		48A656E718163C1B00746D36 /* BrowseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A656E518163C1B00746D36 /* BrowseViewController.xib */; };
+		48A656EB18163F8700746D36 /* CompanyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A656E918163F8700746D36 /* CompanyViewController.m */; };
 		48A656EE1816468000746D36 /* Sunflower.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48A656ED1816468000746D36 /* Sunflower.gif */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +44,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C0AADBB1E203E2C00353199 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		2C0AADBC1E203E2C00353199 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		2C0AADBF1E23EF6600353199 /* Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
+		2C0AADC21E24086500353199 /* ProductWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductWebViewController.h; sourceTree = "<group>"; };
+		2C0AADC31E24086500353199 /* ProductWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductWebViewController.m; sourceTree = "<group>"; };
+		2C0AADC51E24088900353199 /* ProductWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductWebViewController.xib; sourceTree = "<group>"; };
+		2C1454F61E200F1900362BF3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		2C1454F81E2011B200362BF3 /* GlobalConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalConstants.h; sourceTree = "<group>"; };
+		2C1454F91E2011B200362BF3 /* GlobalConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalConstants.m; sourceTree = "<group>"; };
+		2C1454FB1E201CDA00362BF3 /* Company.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
+		2C1454FC1E201CDA00362BF3 /* Company.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Company.m; sourceTree = "<group>"; };
+		2C1454FE1E20258600362BF3 /* CompanyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompanyViewController.xib; sourceTree = "<group>"; };
 		48A656B118163BF200746D36 /* NavCtrl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavCtrl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A656B418163BF200746D36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		48A656B618163BF200746D36 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,11 +72,11 @@
 		48A656D518163BF200746D36 /* NavCtrlTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NavCtrlTests-Info.plist"; sourceTree = "<group>"; };
 		48A656D718163BF200746D36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		48A656D918163BF200746D36 /* NavCtrlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavCtrlTests.m; sourceTree = "<group>"; };
-		48A656E318163C1B00746D36 /* CompanyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompanyViewController.h; path = ../CompanyViewController.h; sourceTree = "<group>"; };
-		48A656E418163C1B00746D36 /* CompanyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CompanyViewController.m; path = ../CompanyViewController.m; sourceTree = "<group>"; };
-		48A656E518163C1B00746D36 /* CompanyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CompanyViewController.xib; path = ../CompanyViewController.xib; sourceTree = "<group>"; };
-		48A656E818163F8700746D36 /* ProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductViewController.h; path = ../ProductViewController.h; sourceTree = "<group>"; };
-		48A656E918163F8700746D36 /* ProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductViewController.m; path = ../ProductViewController.m; sourceTree = "<group>"; };
+		48A656E318163C1B00746D36 /* BrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrowseViewController.h; path = ../BrowseViewController.h; sourceTree = "<group>"; };
+		48A656E418163C1B00746D36 /* BrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrowseViewController.m; path = ../BrowseViewController.m; sourceTree = "<group>"; };
+		48A656E518163C1B00746D36 /* BrowseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BrowseViewController.xib; path = ../BrowseViewController.xib; sourceTree = "<group>"; };
+		48A656E818163F8700746D36 /* CompanyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompanyViewController.h; path = ../CompanyViewController.h; sourceTree = "<group>"; };
+		48A656E918163F8700746D36 /* CompanyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CompanyViewController.m; path = ../CompanyViewController.m; sourceTree = "<group>"; };
 		48A656ED1816468000746D36 /* Sunflower.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Sunflower.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +104,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C0AADBE1E2046F400353199 /* CostomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				2C1454FB1E201CDA00362BF3 /* Company.h */,
+				2C1454FC1E201CDA00362BF3 /* Company.m */,
+				2C0AADBB1E203E2C00353199 /* Product.h */,
+				2C0AADBC1E203E2C00353199 /* Product.m */,
+			);
+			name = CostomClasses;
+			sourceTree = "<group>";
+		};
+		2C0AADC11E24080500353199 /* ProductViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C0AADC21E24086500353199 /* ProductWebViewController.h */,
+				2C0AADC31E24086500353199 /* ProductWebViewController.m */,
+				2C0AADC51E24088900353199 /* ProductWebViewController.xib */,
+			);
+			name = ProductViewController;
+			sourceTree = "<group>";
+		};
 		483796CB1BCBF7A00062D5AB /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,22 +134,24 @@
 			name = AppDelegate;
 			sourceTree = "<group>";
 		};
-		483796CC1BCBF7C70062D5AB /* ParentViewController */ = {
+		483796CC1BCBF7C70062D5AB /* BrowseViewController */ = {
 			isa = PBXGroup;
 			children = (
-				48A656E318163C1B00746D36 /* CompanyViewController.h */,
-				48A656E418163C1B00746D36 /* CompanyViewController.m */,
+				48A656E318163C1B00746D36 /* BrowseViewController.h */,
+				48A656E418163C1B00746D36 /* BrowseViewController.m */,
+				48A656E518163C1B00746D36 /* BrowseViewController.xib */,
 			);
-			name = ParentViewController;
+			name = BrowseViewController;
 			sourceTree = "<group>";
 		};
-		483796CD1BCBF7EB0062D5AB /* ProductViewController */ = {
+		483796CD1BCBF7EB0062D5AB /* CompanyViewController */ = {
 			isa = PBXGroup;
 			children = (
-				48A656E818163F8700746D36 /* ProductViewController.h */,
-				48A656E918163F8700746D36 /* ProductViewController.m */,
+				48A656E818163F8700746D36 /* CompanyViewController.h */,
+				48A656E918163F8700746D36 /* CompanyViewController.m */,
+				2C1454FE1E20258600362BF3 /* CompanyViewController.xib */,
 			);
-			name = ProductViewController;
+			name = CompanyViewController;
 			sourceTree = "<group>";
 		};
 		48A656A818163BF200746D36 = {
@@ -144,11 +187,15 @@
 		48A656BA18163BF200746D36 /* NavCtrl */ = {
 			isa = PBXGroup;
 			children = (
-				483796CB1BCBF7A00062D5AB /* AppDelegate */,
-				483796CC1BCBF7C70062D5AB /* ParentViewController */,
-				483796CD1BCBF7EB0062D5AB /* ProductViewController */,
+				2C0AADBF1E23EF6600353199 /* Notes */,
 				48A656C618163BF200746D36 /* Images.xcassets */,
-				48A656E518163C1B00746D36 /* CompanyViewController.xib */,
+				2C0AADBE1E2046F400353199 /* CostomClasses */,
+				2C1454F81E2011B200362BF3 /* GlobalConstants.h */,
+				2C1454F91E2011B200362BF3 /* GlobalConstants.m */,
+				483796CB1BCBF7A00062D5AB /* AppDelegate */,
+				483796CC1BCBF7C70062D5AB /* BrowseViewController */,
+				483796CD1BCBF7EB0062D5AB /* CompanyViewController */,
+				2C0AADC11E24080500353199 /* ProductViewController */,
 				48A656BB18163BF200746D36 /* Supporting Files */,
 			);
 			path = NavCtrl;
@@ -162,6 +209,7 @@
 				48A656BD18163BF200746D36 /* InfoPlist.strings */,
 				48A656C018163BF200746D36 /* main.m */,
 				48A656C218163BF200746D36 /* NavCtrl-Prefix.pch */,
+				2C1454F61E200F1900362BF3 /* Launch Screen.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -261,8 +309,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				48A656EE1816468000746D36 /* Sunflower.gif in Resources */,
-				48A656E718163C1B00746D36 /* CompanyViewController.xib in Resources */,
+				48A656E718163C1B00746D36 /* BrowseViewController.xib in Resources */,
 				48A656BF18163BF200746D36 /* InfoPlist.strings in Resources */,
+				2C0AADC61E24088900353199 /* ProductWebViewController.xib in Resources */,
+				2C1454F71E200F1900362BF3 /* Launch Screen.storyboard in Resources */,
+				2C1454FF1E20258600362BF3 /* CompanyViewController.xib in Resources */,
+				2C0AADC01E23EF6600353199 /* Notes in Resources */,
 				48A656C718163BF200746D36 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,10 +334,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48A656E618163C1B00746D36 /* CompanyViewController.m in Sources */,
+				2C0AADBD1E203E2C00353199 /* Product.m in Sources */,
+				48A656E618163C1B00746D36 /* BrowseViewController.m in Sources */,
+				2C1454FD1E201CDA00362BF3 /* Company.m in Sources */,
+				2C0AADC41E24086500353199 /* ProductWebViewController.m in Sources */,
+				2C1454FA1E2011B200362BF3 /* GlobalConstants.m in Sources */,
 				48A656C518163BF200746D36 /* NavControllerAppDelegate.m in Sources */,
 				48A656C118163BF200746D36 /* main.m in Sources */,
-				48A656EB18163F8700746D36 /* ProductViewController.m in Sources */,
+				48A656EB18163F8700746D36 /* CompanyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +467,7 @@
 				INFOPLIST_FILE = "NavCtrl/NavCtrl-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "qcd.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -426,6 +483,7 @@
 				INFOPLIST_FILE = "NavCtrl/NavCtrl-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "qcd.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
