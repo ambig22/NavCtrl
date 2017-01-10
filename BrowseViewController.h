@@ -10,12 +10,12 @@
 #import "GlobalConstants.h"
 #import "Company.h"
 #import "Product.h"
+#import "DAO.h"
 
 @class ChildViewController;
 
 @interface BrowseViewController : UITableViewController
 
-@property (nonatomic, strong) NSMutableArray *companyList;
-@property (nonatomic, strong) NSArray *logoList;
+@property (nonatomic, strong) DAO *sharedData;
 
 @end

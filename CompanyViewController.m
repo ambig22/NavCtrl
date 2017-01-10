@@ -8,6 +8,7 @@
 
 #import "CompanyViewController.h"
 #import "ProductWebViewController.h"
+#import "DAO.h"
 
 @interface CompanyViewController ()
 
@@ -23,6 +24,7 @@
 - (void)viewDidLoad {
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
+    self.sharedData = [DAO sharedDataManager];
     
     // Navigation buttons
     self.navigationItem.rightBarButtonItem = self.editButtonItem;

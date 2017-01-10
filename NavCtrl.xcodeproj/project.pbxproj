@@ -11,6 +11,7 @@
 		2C0AADC01E23EF6600353199 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 2C0AADBF1E23EF6600353199 /* Notes */; };
 		2C0AADC41E24086500353199 /* ProductWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0AADC31E24086500353199 /* ProductWebViewController.m */; };
 		2C0AADC61E24088900353199 /* ProductWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C0AADC51E24088900353199 /* ProductWebViewController.xib */; };
+		2C0AADC91E25413500353199 /* DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0AADC81E25413500353199 /* DAO.m */; };
 		2C1454F71E200F1900362BF3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1454F61E200F1900362BF3 /* Launch Screen.storyboard */; };
 		2C1454FA1E2011B200362BF3 /* GlobalConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1454F91E2011B200362BF3 /* GlobalConstants.m */; };
 		2C1454FD1E201CDA00362BF3 /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1454FC1E201CDA00362BF3 /* Company.m */; };
@@ -30,7 +31,6 @@
 		48A656E618163C1B00746D36 /* BrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A656E418163C1B00746D36 /* BrowseViewController.m */; };
 		48A656E718163C1B00746D36 /* BrowseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A656E518163C1B00746D36 /* BrowseViewController.xib */; };
 		48A656EB18163F8700746D36 /* CompanyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A656E918163F8700746D36 /* CompanyViewController.m */; };
-		48A656EE1816468000746D36 /* Sunflower.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48A656ED1816468000746D36 /* Sunflower.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +50,8 @@
 		2C0AADC21E24086500353199 /* ProductWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductWebViewController.h; sourceTree = "<group>"; };
 		2C0AADC31E24086500353199 /* ProductWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductWebViewController.m; sourceTree = "<group>"; };
 		2C0AADC51E24088900353199 /* ProductWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductWebViewController.xib; sourceTree = "<group>"; };
+		2C0AADC71E25413500353199 /* DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAO.h; path = ../DAO.h; sourceTree = "<group>"; };
+		2C0AADC81E25413500353199 /* DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAO.m; path = ../DAO.m; sourceTree = "<group>"; };
 		2C1454F61E200F1900362BF3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		2C1454F81E2011B200362BF3 /* GlobalConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalConstants.h; sourceTree = "<group>"; };
 		2C1454F91E2011B200362BF3 /* GlobalConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalConstants.m; sourceTree = "<group>"; };
@@ -77,7 +79,6 @@
 		48A656E518163C1B00746D36 /* BrowseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BrowseViewController.xib; path = ../BrowseViewController.xib; sourceTree = "<group>"; };
 		48A656E818163F8700746D36 /* CompanyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompanyViewController.h; path = ../CompanyViewController.h; sourceTree = "<group>"; };
 		48A656E918163F8700746D36 /* CompanyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CompanyViewController.m; path = ../CompanyViewController.m; sourceTree = "<group>"; };
-		48A656ED1816468000746D36 /* Sunflower.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Sunflower.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +108,8 @@
 		2C0AADBE1E2046F400353199 /* CostomClasses */ = {
 			isa = PBXGroup;
 			children = (
+				2C0AADC71E25413500353199 /* DAO.h */,
+				2C0AADC81E25413500353199 /* DAO.m */,
 				2C1454FB1E201CDA00362BF3 /* Company.h */,
 				2C1454FC1E201CDA00362BF3 /* Company.m */,
 				2C0AADBB1E203E2C00353199 /* Product.h */,
@@ -204,7 +207,6 @@
 		48A656BB18163BF200746D36 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				48A656ED1816468000746D36 /* Sunflower.gif */,
 				48A656BC18163BF200746D36 /* NavCtrl-Info.plist */,
 				48A656BD18163BF200746D36 /* InfoPlist.strings */,
 				48A656C018163BF200746D36 /* main.m */,
@@ -308,7 +310,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48A656EE1816468000746D36 /* Sunflower.gif in Resources */,
 				48A656E718163C1B00746D36 /* BrowseViewController.xib in Resources */,
 				48A656BF18163BF200746D36 /* InfoPlist.strings in Resources */,
 				2C0AADC61E24088900353199 /* ProductWebViewController.xib in Resources */,
@@ -340,6 +341,7 @@
 				2C0AADC41E24086500353199 /* ProductWebViewController.m in Sources */,
 				2C1454FA1E2011B200362BF3 /* GlobalConstants.m in Sources */,
 				48A656C518163BF200746D36 /* NavControllerAppDelegate.m in Sources */,
+				2C0AADC91E25413500353199 /* DAO.m in Sources */,
 				48A656C118163BF200746D36 /* main.m in Sources */,
 				48A656EB18163F8700746D36 /* CompanyViewController.m in Sources */,
 			);

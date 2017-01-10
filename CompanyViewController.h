@@ -10,14 +10,18 @@
 #import "Company.h"
 #import "Product.h"
 #import "GlobalConstants.h"
+#import "DAO.h"
 
 @interface CompanyViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
+// View properties
 @property (retain, nonatomic) IBOutlet UIView *companyView;
-
 @property (retain, nonatomic) IBOutlet UIImageView *logoImageView;
 @property (retain, nonatomic) IBOutlet UILabel *companyNameLabel;
 @property (retain, nonatomic) IBOutlet UITableView *productTableView;
+
+// DAO
+@property (retain, nonatomic) DAO *sharedData;
 
 // Stores the active company that was passed from BrowseViewController
 @property (retain, nonatomic) Company *company;
