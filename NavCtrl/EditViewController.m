@@ -94,10 +94,14 @@
         Company *comp = [[Company alloc]init];
         comp.name = self.textField1.text;
         comp.ticker = self.textField2.text;
+        comp.imageName = self.textField3.text;
         comp.logoImage = [UIImage imageNamed:self.textField3.text];
         
         // Add to array
         [self.sharedData.companyList addObject:comp];
+
+        // Add to Core Data
+        [self.sharedData createManagedCompany: comp];
         
         // Pop VC
         [self.navigationController popViewControllerAnimated:YES];

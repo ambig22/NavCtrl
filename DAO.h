@@ -20,5 +20,7 @@
 @property (strong) NSManagedObjectContext *managedObjectContext;
 
 + (id)sharedDataManager;
+- (void)createManagedCompany:(Company*)comp;
+- (void)removeManagedCompany:(Company*)comp;
 
 @end

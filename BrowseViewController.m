@@ -145,7 +145,8 @@
     Company *currentCompany = self.sharedData.companyList[indexPath.row];
     cell.textLabel.text = currentCompany.name;
     cell.imageView.image = currentCompany.logoImage;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - $%@", currentCompany.ticker, currentCompany.price];
+    // cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - $%@", currentCompany.ticker, currentCompany.price];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
     cell.detailTextLabel.textColor = UIColorFromRGB(0x777777);
     
     UIView *selectionColor = [[UIView alloc] init];
@@ -169,6 +170,10 @@
 -(NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewRowAction *button = [UITableViewRowAction rowActionWithStyle: UITableViewRowActionStyleDefault title:@"Delete" handler:^(UITableViewRowAction *delete, NSIndexPath *indexPath)
                                     {
+                                        // Remove the item from Core Data
+                                        Company *comp = self.sharedData.companyList[indexPath.row];
+                                        [self.sharedData removeManagedCompany: comp];
+                                        
                                         // Remove the the item from the companyList array
                                         [self.sharedData.companyList removeObjectAtIndex:indexPath.row];
                                         
@@ -235,7 +240,7 @@
                                      #pragma mark - Actoins
 //
 // ================================================================================================
-// In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
+// Selecting company in table view
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     Company *currentCompany = self.sharedData.companyList[indexPath.row];
@@ -255,9 +260,6 @@
         editCompVC.company = currentCompany;
         [self.navigationController pushViewController:editCompVC animated:YES];
     }
-    
-    
-    // If in edit mode:
     
 }
 

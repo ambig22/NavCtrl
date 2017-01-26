@@ -35,9 +35,8 @@
 
 - (id)init {
     if (self = [super init]) {
+        [self initializeCoreData];
         if ([[NSUserDefaults standardUserDefaults] boolForKey:@"hasRun"]){
-            
-            [self initializeCoreData];
             // App has run, fetch core data
             NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
             NSFetchRequest *fetchCompanies = [[NSFetchRequest alloc] initWithEntityName:@"ManagedCompany"];
@@ -295,7 +294,7 @@
 
 // ================================================================================================
 //
-                            #pragma mark - Core Data Initialization
+                                    #pragma mark - Core Data
 //
 // ================================================================================================
 - (void)initializeCoreData
@@ -337,6 +336,42 @@
         NSPersistentStore *store = [psc addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error];
         NSAssert(store != nil, @"Error initializing PSC: %@\n%@", [error localizedDescription], [error userInfo]);
     });
+}
+
+// Create & Update Managed Objects
+- (void)createManagedCompany:(Company*)company {
+    // [self initializeCoreData];
+    
+    ManagedCompany *mC = [NSEntityDescription insertNewObjectForEntityForName:@"ManagedCompany" inManagedObjectContext:self.managedObjectContext];
+    mC.name = company.name;
+    mC.ticker = company.ticker;
+    mC.imageName = company.imageName;
+    mC.price = 0;
+    
+    [self.managedObjectContext save:nil];
+
+}
+
+- (void)updateManagedCompany:(Company*)comp {
+
+}
+
+- (void)removeManagedCompany:(Company*)comp {
+   // [self initializeCoreData];
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"ManagedCompany"];
+    NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
+    
+    // [request setPredicate:[NSPredicate predicateWithFormat:@"name == %@", compName]];
+    NSMutableArray *managedCompanies = [[managedObjectContext executeFetchRequest:request error:nil] mutableCopy];
+    ManagedCompany *companyToDelete;
+    for (ManagedCompany *mC in managedCompanies) {
+        if ([mC.name isEqualToString: comp.name]) {
+            companyToDelete = mC;
+        }
+    }
+    [self.managedObjectContext deleteObject:companyToDelete];
+    [self.managedObjectContext save:nil];
+
 }
 
 @end
