@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomViewController.h"
 #import "Product.h"
 
-@interface ProductWebViewController : UIViewController
+@interface ProductWebViewController : CustomViewController
 @property (retain, nonatomic) IBOutlet UIView *productView;
 @property (retain, nonatomic) IBOutlet UIWebView *webView;
 

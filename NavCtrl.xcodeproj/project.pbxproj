@@ -12,10 +12,16 @@
 		2C0AADC41E24086500353199 /* ProductWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0AADC31E24086500353199 /* ProductWebViewController.m */; };
 		2C0AADC61E24088900353199 /* ProductWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C0AADC51E24088900353199 /* ProductWebViewController.xib */; };
 		2C0AADC91E25413500353199 /* DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0AADC81E25413500353199 /* DAO.m */; };
+		2C0AADCB1E25764B00353199 /* BrowseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C0AADCA1E25764B00353199 /* BrowseViewController.xib */; };
+		2C0AADCE1E2582C500353199 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0AADCD1E2582C500353199 /* CustomViewController.m */; };
+		2C0AADD11E26AF7800353199 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0AADD01E26AF7800353199 /* EditViewController.m */; };
+		2C0AADD41E26AFBC00353199 /* EditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C0AADD31E26AFBC00353199 /* EditViewController.xib */; };
+		2C0AADDA1E26C95200353199 /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0AADD91E26C95200353199 /* CustomTextField.m */; };
 		2C1454F71E200F1900362BF3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1454F61E200F1900362BF3 /* Launch Screen.storyboard */; };
 		2C1454FA1E2011B200362BF3 /* GlobalConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1454F91E2011B200362BF3 /* GlobalConstants.m */; };
 		2C1454FD1E201CDA00362BF3 /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1454FC1E201CDA00362BF3 /* Company.m */; };
 		2C1454FF1E20258600362BF3 /* CompanyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C1454FE1E20258600362BF3 /* CompanyViewController.xib */; };
+		2C30627F1E37EE3F00D6A7C0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C30627D1E37EE3F00D6A7C0 /* Model.xcdatamodeld */; };
 		48A656B518163BF200746D36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A656B418163BF200746D36 /* Foundation.framework */; };
 		48A656B718163BF200746D36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A656B618163BF200746D36 /* CoreGraphics.framework */; };
 		48A656B918163BF200746D36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A656B818163BF200746D36 /* UIKit.framework */; };
@@ -29,7 +35,6 @@
 		48A656D818163BF200746D36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48A656D618163BF200746D36 /* InfoPlist.strings */; };
 		48A656DA18163BF200746D36 /* NavCtrlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A656D918163BF200746D36 /* NavCtrlTests.m */; };
 		48A656E618163C1B00746D36 /* BrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A656E418163C1B00746D36 /* BrowseViewController.m */; };
-		48A656E718163C1B00746D36 /* BrowseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A656E518163C1B00746D36 /* BrowseViewController.xib */; };
 		48A656EB18163F8700746D36 /* CompanyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A656E918163F8700746D36 /* CompanyViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -52,12 +57,21 @@
 		2C0AADC51E24088900353199 /* ProductWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductWebViewController.xib; sourceTree = "<group>"; };
 		2C0AADC71E25413500353199 /* DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAO.h; path = ../DAO.h; sourceTree = "<group>"; };
 		2C0AADC81E25413500353199 /* DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAO.m; path = ../DAO.m; sourceTree = "<group>"; };
+		2C0AADCA1E25764B00353199 /* BrowseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BrowseViewController.xib; path = ../BrowseViewController.xib; sourceTree = "<group>"; };
+		2C0AADCC1E2582C500353199 /* CustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
+		2C0AADCD1E2582C500353199 /* CustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
+		2C0AADCF1E26AF7800353199 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		2C0AADD01E26AF7800353199 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		2C0AADD31E26AFBC00353199 /* EditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditViewController.xib; sourceTree = "<group>"; };
+		2C0AADD81E26C95200353199 /* CustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomTextField.h; path = ../CustomTextField.h; sourceTree = "<group>"; };
+		2C0AADD91E26C95200353199 /* CustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomTextField.m; path = ../CustomTextField.m; sourceTree = "<group>"; };
 		2C1454F61E200F1900362BF3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		2C1454F81E2011B200362BF3 /* GlobalConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalConstants.h; sourceTree = "<group>"; };
 		2C1454F91E2011B200362BF3 /* GlobalConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalConstants.m; sourceTree = "<group>"; };
 		2C1454FB1E201CDA00362BF3 /* Company.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
 		2C1454FC1E201CDA00362BF3 /* Company.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Company.m; sourceTree = "<group>"; };
 		2C1454FE1E20258600362BF3 /* CompanyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompanyViewController.xib; sourceTree = "<group>"; };
+		2C30627E1E37EE3F00D6A7C0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		48A656B118163BF200746D36 /* NavCtrl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavCtrl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A656B418163BF200746D36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		48A656B618163BF200746D36 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -76,7 +90,6 @@
 		48A656D918163BF200746D36 /* NavCtrlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavCtrlTests.m; sourceTree = "<group>"; };
 		48A656E318163C1B00746D36 /* BrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrowseViewController.h; path = ../BrowseViewController.h; sourceTree = "<group>"; };
 		48A656E418163C1B00746D36 /* BrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrowseViewController.m; path = ../BrowseViewController.m; sourceTree = "<group>"; };
-		48A656E518163C1B00746D36 /* BrowseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BrowseViewController.xib; path = ../BrowseViewController.xib; sourceTree = "<group>"; };
 		48A656E818163F8700746D36 /* CompanyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompanyViewController.h; path = ../CompanyViewController.h; sourceTree = "<group>"; };
 		48A656E918163F8700746D36 /* CompanyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CompanyViewController.m; path = ../CompanyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,9 +118,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C0AADBE1E2046F400353199 /* CostomClasses */ = {
+		2C0AADBE1E2046F400353199 /* DataObjects */ = {
 			isa = PBXGroup;
 			children = (
+				2C30627D1E37EE3F00D6A7C0 /* Model.xcdatamodeld */,
 				2C0AADC71E25413500353199 /* DAO.h */,
 				2C0AADC81E25413500353199 /* DAO.m */,
 				2C1454FB1E201CDA00362BF3 /* Company.h */,
@@ -115,7 +129,7 @@
 				2C0AADBB1E203E2C00353199 /* Product.h */,
 				2C0AADBC1E203E2C00353199 /* Product.m */,
 			);
-			name = CostomClasses;
+			name = DataObjects;
 			sourceTree = "<group>";
 		};
 		2C0AADC11E24080500353199 /* ProductViewController */ = {
@@ -126,6 +140,27 @@
 				2C0AADC51E24088900353199 /* ProductWebViewController.xib */,
 			);
 			name = ProductViewController;
+			sourceTree = "<group>";
+		};
+		2C0AADD21E26AF8A00353199 /* EditViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C0AADCF1E26AF7800353199 /* EditViewController.h */,
+				2C0AADD01E26AF7800353199 /* EditViewController.m */,
+				2C0AADD31E26AFBC00353199 /* EditViewController.xib */,
+			);
+			name = EditViewController;
+			sourceTree = "<group>";
+		};
+		2C0AADDB1E26C95D00353199 /* Custom UI */ = {
+			isa = PBXGroup;
+			children = (
+				2C0AADCC1E2582C500353199 /* CustomViewController.h */,
+				2C0AADCD1E2582C500353199 /* CustomViewController.m */,
+				2C0AADD81E26C95200353199 /* CustomTextField.h */,
+				2C0AADD91E26C95200353199 /* CustomTextField.m */,
+			);
+			name = "Custom UI";
 			sourceTree = "<group>";
 		};
 		483796CB1BCBF7A00062D5AB /* AppDelegate */ = {
@@ -142,7 +177,7 @@
 			children = (
 				48A656E318163C1B00746D36 /* BrowseViewController.h */,
 				48A656E418163C1B00746D36 /* BrowseViewController.m */,
-				48A656E518163C1B00746D36 /* BrowseViewController.xib */,
+				2C0AADCA1E25764B00353199 /* BrowseViewController.xib */,
 			);
 			name = BrowseViewController;
 			sourceTree = "<group>";
@@ -191,12 +226,14 @@
 			isa = PBXGroup;
 			children = (
 				2C0AADBF1E23EF6600353199 /* Notes */,
-				48A656C618163BF200746D36 /* Images.xcassets */,
-				2C0AADBE1E2046F400353199 /* CostomClasses */,
 				2C1454F81E2011B200362BF3 /* GlobalConstants.h */,
 				2C1454F91E2011B200362BF3 /* GlobalConstants.m */,
+				48A656C618163BF200746D36 /* Images.xcassets */,
 				483796CB1BCBF7A00062D5AB /* AppDelegate */,
+				2C0AADDB1E26C95D00353199 /* Custom UI */,
+				2C0AADBE1E2046F400353199 /* DataObjects */,
 				483796CC1BCBF7C70062D5AB /* BrowseViewController */,
+				2C0AADD21E26AF8A00353199 /* EditViewController */,
 				483796CD1BCBF7EB0062D5AB /* CompanyViewController */,
 				2C0AADC11E24080500353199 /* ProductViewController */,
 				48A656BB18163BF200746D36 /* Supporting Files */,
@@ -310,10 +347,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48A656E718163C1B00746D36 /* BrowseViewController.xib in Resources */,
+				2C0AADCB1E25764B00353199 /* BrowseViewController.xib in Resources */,
 				48A656BF18163BF200746D36 /* InfoPlist.strings in Resources */,
 				2C0AADC61E24088900353199 /* ProductWebViewController.xib in Resources */,
 				2C1454F71E200F1900362BF3 /* Launch Screen.storyboard in Resources */,
+				2C0AADD41E26AFBC00353199 /* EditViewController.xib in Resources */,
 				2C1454FF1E20258600362BF3 /* CompanyViewController.xib in Resources */,
 				2C0AADC01E23EF6600353199 /* Notes in Resources */,
 				48A656C718163BF200746D36 /* Images.xcassets in Resources */,
@@ -336,13 +374,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C0AADBD1E203E2C00353199 /* Product.m in Sources */,
+				2C0AADCE1E2582C500353199 /* CustomViewController.m in Sources */,
 				48A656E618163C1B00746D36 /* BrowseViewController.m in Sources */,
 				2C1454FD1E201CDA00362BF3 /* Company.m in Sources */,
+				2C0AADDA1E26C95200353199 /* CustomTextField.m in Sources */,
 				2C0AADC41E24086500353199 /* ProductWebViewController.m in Sources */,
 				2C1454FA1E2011B200362BF3 /* GlobalConstants.m in Sources */,
 				48A656C518163BF200746D36 /* NavControllerAppDelegate.m in Sources */,
 				2C0AADC91E25413500353199 /* DAO.m in Sources */,
+				2C0AADD11E26AF7800353199 /* EditViewController.m in Sources */,
 				48A656C118163BF200746D36 /* main.m in Sources */,
+				2C30627F1E37EE3F00D6A7C0 /* Model.xcdatamodeld in Sources */,
 				48A656EB18163F8700746D36 /* CompanyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,6 +605,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2C30627D1E37EE3F00D6A7C0 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2C30627E1E37EE3F00D6A7C0 /* Model.xcdatamodel */,
+			);
+			currentVersion = 2C30627E1E37EE3F00D6A7C0 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 48A656A918163BF200746D36 /* Project object */;
 }

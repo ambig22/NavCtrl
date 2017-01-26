@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
-    <device id="ipad9_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -11,24 +11,82 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BrowseViewController">
             <connections>
-                <outlet property="view" destination="8" id="11"/>
+                <outlet property="emptyListView" destination="a0d-qT-elz" id="v56-bW-ksi"/>
+                <outlet property="loadingLabel" destination="yY3-g4-W1n" id="kej-o7-mYS"/>
+                <outlet property="tableView" destination="cBh-kO-Gx1" id="lIv-6g-tyn"/>
+                <outlet property="view" destination="iN0-l3-epB" id="oAx-Ac-HYW"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="8">
-            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cBh-kO-Gx1">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a0d-qT-elz">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptystate-homeView" translatesAutoresizingMaskIntoConstraints="NO" id="AS9-Fs-M4K">
+                            <rect key="frame" x="152" y="223" width="70" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="Aae-x4-Rae"/>
+                                <constraint firstAttribute="height" constant="70" id="hwV-k5-rz3"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are not following any companies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7f-2D-FjM">
+                            <rect key="frame" x="30" y="323" width="315" height="22"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6s-jb-P7w">
+                            <rect key="frame" x="132" y="375" width="110" height="30"/>
+                            <state key="normal" title="+ Add Company"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="AS9-Fs-M4K" firstAttribute="centerX" secondItem="a0d-qT-elz" secondAttribute="centerX" id="DCn-eQ-S6U"/>
+                        <constraint firstItem="N7f-2D-FjM" firstAttribute="centerY" secondItem="a0d-qT-elz" secondAttribute="centerY" id="FWN-T5-lnQ"/>
+                        <constraint firstItem="F6s-jb-P7w" firstAttribute="top" secondItem="N7f-2D-FjM" secondAttribute="bottom" constant="30" id="INa-Ct-jW2"/>
+                        <constraint firstItem="N7f-2D-FjM" firstAttribute="leading" secondItem="a0d-qT-elz" secondAttribute="leading" constant="30" id="gIA-1s-bdk"/>
+                        <constraint firstAttribute="trailing" secondItem="N7f-2D-FjM" secondAttribute="trailing" constant="30" id="qyC-bn-604"/>
+                        <constraint firstItem="F6s-jb-P7w" firstAttribute="centerX" secondItem="a0d-qT-elz" secondAttribute="centerX" id="sL6-1f-PMJ"/>
+                        <constraint firstItem="N7f-2D-FjM" firstAttribute="top" secondItem="AS9-Fs-M4K" secondAttribute="bottom" constant="30" id="yuv-QF-DLE"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Updating Stock Prices" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yY3-g4-W1n">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.87843137250000003" green="0.49863351449999999" blue="0.34429145950000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="cik-jI-jIR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <nil key="simulatedStatusBarMetrics"/>
-            <connections>
-                <outlet property="dataSource" destination="-1" id="9"/>
-                <outlet property="delegate" destination="-1" id="10"/>
-            </connections>
-        </tableView>
+            <constraints>
+                <constraint firstItem="cBh-kO-Gx1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4Su-zv-384"/>
+                <constraint firstItem="a0d-qT-elz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="AhP-i1-lCx"/>
+                <constraint firstAttribute="bottom" secondItem="a0d-qT-elz" secondAttribute="bottom" id="ClF-gg-1j6"/>
+                <constraint firstAttribute="trailing" secondItem="yY3-g4-W1n" secondAttribute="trailing" id="GtO-Ih-3zf"/>
+                <constraint firstItem="yY3-g4-W1n" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MBF-9k-UYr"/>
+                <constraint firstItem="a0d-qT-elz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="clM-vp-SjL"/>
+                <constraint firstItem="yY3-g4-W1n" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kBh-pv-Vws"/>
+                <constraint firstAttribute="trailing" secondItem="a0d-qT-elz" secondAttribute="trailing" id="o7y-yY-fTN"/>
+                <constraint firstAttribute="bottom" secondItem="cBh-kO-Gx1" secondAttribute="bottom" id="t26-ny-Qas"/>
+                <constraint firstAttribute="trailing" secondItem="cBh-kO-Gx1" secondAttribute="trailing" id="wyI-26-rtS"/>
+                <constraint firstItem="cBh-kO-Gx1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zag-es-beJ"/>
+            </constraints>
+            <point key="canvasLocation" x="35.5" y="181.5"/>
+        </view>
     </objects>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
-    </simulatedMetricsContainer>
+    <resources>
+        <image name="emptystate-homeView" width="72" height="72"/>
+    </resources>
 </document>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditViewController">
+            <connections>
+                <outlet property="deleteBtn" destination="eKB-dN-ATt" id="ubH-nf-xNB"/>
+                <outlet property="scrollView" destination="l4o-du-Txt" id="JGV-i9-DPy"/>
+                <outlet property="textField1" destination="WtW-48-ucs" id="LrR-ZJ-SZA"/>
+                <outlet property="textField2" destination="1D1-GE-TTG" id="55J-qw-xhI"/>
+                <outlet property="textField3" destination="0IS-o8-6ab" id="z8S-Sv-HUC"/>
+                <outlet property="view" destination="iN0-l3-epB" id="EPm-OB-P2v"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l4o-du-Txt">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hBL-Ic-LxA">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WtW-48-ucs" customClass="CustomTextField">
+                                    <rect key="frame" x="40" y="80" width="295" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="Obg-HC-PLC"/>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="cYD-e3-Yqg"/>
+                                    </constraints>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                            <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1D1-GE-TTG" customClass="CustomTextField">
+                                    <rect key="frame" x="40" y="150" width="295" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="ufq-Jh-pfh"/>
+                                    </constraints>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                                            <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0IS-o8-6ab" customClass="CustomTextField">
+                                    <rect key="frame" x="40" y="220" width="295" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="oU4-Y9-GFR"/>
+                                    </constraints>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                                            <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKB-dN-ATt">
+                                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="riJ-aA-L6z"/>
+                                        <constraint firstAttribute="height" constant="50" id="xgc-94-cdv"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <state key="normal" title="Delete Entry">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="1D1-GE-TTG" firstAttribute="leading" secondItem="hBL-Ic-LxA" secondAttribute="leading" constant="40" id="22q-rC-1j1"/>
+                                <constraint firstItem="WtW-48-ucs" firstAttribute="top" secondItem="hBL-Ic-LxA" secondAttribute="top" constant="80" id="3qO-7F-vdQ"/>
+                                <constraint firstItem="1D1-GE-TTG" firstAttribute="top" secondItem="WtW-48-ucs" secondAttribute="bottom" constant="30" id="5x3-5A-fvZ"/>
+                                <constraint firstAttribute="bottom" secondItem="eKB-dN-ATt" secondAttribute="bottom" id="7x0-Kh-hai"/>
+                                <constraint firstItem="WtW-48-ucs" firstAttribute="leading" secondItem="hBL-Ic-LxA" secondAttribute="leading" constant="40" id="JAH-cA-oB6"/>
+                                <constraint firstItem="0IS-o8-6ab" firstAttribute="top" secondItem="1D1-GE-TTG" secondAttribute="bottom" constant="30" id="Tyf-wa-oRL"/>
+                                <constraint firstAttribute="trailing" secondItem="WtW-48-ucs" secondAttribute="trailing" constant="40" id="VzT-yf-WAF"/>
+                                <constraint firstAttribute="trailing" secondItem="eKB-dN-ATt" secondAttribute="trailing" id="WTt-ad-xrQ"/>
+                                <constraint firstItem="eKB-dN-ATt" firstAttribute="leading" secondItem="hBL-Ic-LxA" secondAttribute="leading" id="cBs-gW-b8k"/>
+                                <constraint firstAttribute="trailing" secondItem="0IS-o8-6ab" secondAttribute="trailing" constant="40" id="gdC-X2-BGd"/>
+                                <constraint firstItem="0IS-o8-6ab" firstAttribute="leading" secondItem="hBL-Ic-LxA" secondAttribute="leading" constant="40" id="r82-xL-jxN"/>
+                                <constraint firstAttribute="trailing" secondItem="1D1-GE-TTG" secondAttribute="trailing" constant="40" id="rAc-Ba-hdj"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="hBL-Ic-LxA" firstAttribute="leading" secondItem="l4o-du-Txt" secondAttribute="leading" id="0fd-Gc-9XA"/>
+                        <constraint firstAttribute="bottom" secondItem="hBL-Ic-LxA" secondAttribute="bottom" id="2ki-pp-PNq"/>
+                        <constraint firstAttribute="trailing" secondItem="hBL-Ic-LxA" secondAttribute="trailing" id="j38-pC-KOU"/>
+                        <constraint firstItem="hBL-Ic-LxA" firstAttribute="top" secondItem="l4o-du-Txt" secondAttribute="top" id="jTs-hJ-DRn"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="l4o-du-Txt" secondAttribute="trailing" id="5pV-h9-vGM"/>
+                <constraint firstItem="hBL-Ic-LxA" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" priority="250" id="6KE-E2-Yo7"/>
+                <constraint firstAttribute="bottom" secondItem="l4o-du-Txt" secondAttribute="bottom" id="BnL-Tn-nuX"/>
+                <constraint firstItem="l4o-du-Txt" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="JU1-Sb-vvN"/>
+                <constraint firstItem="l4o-du-Txt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="u3Q-jM-tJe"/>
+                <constraint firstItem="l4o-du-Txt" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="vRs-qb-vZt"/>
+                <constraint firstItem="hBL-Ic-LxA" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="xvy-fV-t6Z"/>
+                <constraint firstItem="l4o-du-Txt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yF1-ov-gmu"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="112.5"/>
+        </view>
+    </objects>
+</document>

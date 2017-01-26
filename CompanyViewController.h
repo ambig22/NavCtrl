@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomViewController.h"
 #import "Company.h"
 #import "Product.h"
-#import "GlobalConstants.h"
 #import "DAO.h"
+#import "EditViewController.h"
 
-@interface CompanyViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface CompanyViewController : CustomViewController <UITableViewDelegate, UITableViewDataSource>
 
 // View properties
 @property (retain, nonatomic) IBOutlet UIView *companyView;

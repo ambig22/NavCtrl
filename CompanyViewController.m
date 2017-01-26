@@ -22,12 +22,14 @@
 //
 // ================================================================================================
 - (void)viewDidLoad {
+    [super viewDidLoad];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     self.sharedData = [DAO sharedDataManager];
     
     // Navigation buttons
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addProduct)] autorelease];
+
     
     // General Info
     self.logoImageView.image = self.company.logoImage;
@@ -40,10 +42,25 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.productTableView reloadData];
+}
+
 - (void)setEditing:(BOOL)editing animated:(BOOL)animated {
     [super setEditing:editing animated:animated];
     
     [self.productTableView setEditing: editing animated:YES];
+}
+
+-(void)addProduct {
+    EditViewController *newProdVC = [[EditViewController alloc] init];
+    newProdVC.title = @"Add Product";
+    newProdVC.viewControllerType = productNew;
+    newProdVC.company = self.company;
+    
+    [self.navigationController pushViewController:newProdVC animated:YES];
+    
 }
 
 

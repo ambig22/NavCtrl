@@ -13,6 +13,9 @@
 
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) UIImage *logoImage;
+@property (strong, nonatomic) NSString *imageName;
+
+// use a string : imagename instead, don't save large objects in core data
 @property (strong, nonatomic) NSString *ticker;
 @property (strong, nonatomic) NSNumber *price;
 

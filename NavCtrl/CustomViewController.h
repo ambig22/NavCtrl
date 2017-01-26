@@ -1,12 +1,10 @@
 //
-//  GlobalConstants.h
+//  CustomViewController.h
 //  NavCtrl
 //
-//  Created by Jerry Chen on 1/6/17.
+//  Created by Jerry Chen on 1/10/17.
 //  Copyright © 2017 Aditya Narayan. All rights reserved.
 //
-
-#import <Foundation/Foundation.h>
 
 #import <UIKit/UIKit.h>
 
@@ -16,8 +14,6 @@ green:((float)((rgbValue & 0x00FF00) >>  8))/255.0 \
 blue:((float)((rgbValue & 0x0000FF) >>  0))/255.0 \
 alpha:1.0]
 
-@interface GlobalConstants : NSObject
-
-+(UIColor*) sharedGreen;
+@interface CustomViewController : UIViewController
 
 @end

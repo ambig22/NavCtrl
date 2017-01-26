@@ -10,4 +10,9 @@
 
 @implementation GlobalConstants
 
++(UIColor*) sharedGreen {
+    UIColor *sharedColor = UIColorFromRGB(0x6bbd60);
+    return sharedColor;
+}
+
 @end

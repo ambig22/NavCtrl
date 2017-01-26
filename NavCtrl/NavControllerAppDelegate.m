@@ -8,17 +8,33 @@
 
 #import "NavControllerAppDelegate.h"
 #import "BrowseViewController.h"
+#import "GlobalConstants.h"
 
 @implementation NavControllerAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    
     // Override point for customization after application launch.
     UIViewController *rootController = [[BrowseViewController alloc] initWithNibName:@"BrowseViewController" bundle:nil];
     
+    // ??? Set controller to start from the bottom of Nav
+    rootController.edgesForExtendedLayout = UIRectEdgeNone;
+    
+    // ======================================================================
+    //
+    // Custom Navigation
+    //
+    // ======================================================================
     self.navigationController = [[UINavigationController alloc]
                             initWithRootViewController:rootController];
+    UINavigationBar *customNavBar = self.navigationController.navigationBar;
+    customNavBar.barTintColor = [GlobalConstants sharedGreen];
+    customNavBar.tintColor = [UIColor whiteColor];
+    [customNavBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    
+    application.statusBarStyle = UIStatusBarStyleLightContent;
     
     self.window = [[UIWindow alloc]
                    initWithFrame:[[UIScreen mainScreen] bounds]];

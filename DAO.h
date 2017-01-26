@@ -9,12 +9,15 @@
 #import <Foundation/Foundation.h>
 #import "Company.h"
 #import "Product.h"
+#import <CoreData/CoreData.h>
 
 @interface DAO : NSObject {
     NSMutableArray *companyList;
 }
 
 @property (nonatomic, strong) NSMutableArray *companyList;
+@property (nonatomic, strong) NSMutableArray *managedCompanyList;
+@property (strong) NSManagedObjectContext *managedObjectContext;
 
 + (id)sharedDataManager;
 

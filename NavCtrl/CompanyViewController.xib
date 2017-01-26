@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompanyViewController">
             <connections>
                 <outlet property="companyNameLabel" destination="u1f-Pu-0fx" id="rYE-ix-0Z8"/>
+                <outlet property="companyView" destination="iN0-l3-epB" id="YIP-Bc-l5l"/>
                 <outlet property="logoImageView" destination="iPf-Ni-NSN" id="O6Y-JO-zba"/>
                 <outlet property="productTableView" destination="j4o-Ri-FDF" id="6Gy-jQ-dHd"/>
                 <outlet property="view" destination="iN0-l3-epB" id="DyH-T6-frT"/>
